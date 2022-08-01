@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>JSON</h2>
+    <h5>JavaScript here</h5>
+
+    <script>
+        const Object ={
+            name:"Alam",
+            address: "Jamalpur",
+            lover  :{
+                name :'kalal',
+                fa: 'rose'
+            },
+
+            arr:[12,34,65]
+        };
+
+        const  jsonObject = JSON.stringify(Object);
+        const covertParse = JSON.parse(jsonObject)
+
+        console.log(jsonObject)
+        console.log(covertParse)
+    </script>
+</body>
+</html>
