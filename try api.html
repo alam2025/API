@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Api</title>
+</head>
+<body>
+    <h3 id="activities"></h3>
+    <h4>Learn Form: <a href="">Click here to know something</a></h4>
+
+    <script>
+        fetch('http://www.boredapi.com/api/activity/')
+        .then(response=>response.json())
+        .then(data=> {
+                document.getElementById('activities').innerText= data.activity;
+        })
+    </script>
+</body>
+</html>
